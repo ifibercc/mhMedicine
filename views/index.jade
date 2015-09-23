@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  .container
+    .h1 炼药信息采集
+    hr
+    .h2 请选择二药：
+    .btn-group
+      button.btn.btn-default.two 血色茶花
+      button.btn.btn-default.two 仙狐延
+      button.btn.btn-default.two 鹿茸
+      button.btn.btn-default.two 麝香
+    p
+    .btn-group
+      button.btn.btn-default.two 火凤之睛
+      button.btn.btn-default.two 孔雀红
+      button.btn.btn-default.two 血珊瑚
+      button.btn.btn-default.two 凤凰尾
+    hr
+    .h2 配方:
+    p
+    .btn-group
+      button.btn.btn-default.mat 五龙丹1
+      button.btn.btn-default.mat 五龙丹2
+    p
+    .btn-group
+      button.btn.btn-default.mat 五龙丹3
+      button.btn.btn-default.mat 五龙丹4
+    hr
+    .h2 请选择三药及品质：
+    p
+    select.form-control#three
+      option 金疮药
+      option 定神香
+      option 五龙丹
+      option 金香玉
+      option 九转还魂丹
+    p
+    .form-group
+      input.form-control#quality(type='text',placeholder='输入品质')
+    hr
+    button.btn.btn-default#sub 提交
+
+
