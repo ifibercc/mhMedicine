@@ -1,8 +1,57 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Microsoft YaHei", Helvetica, Arial, sans-serif !important;
 }
 
 a {
   color: #00B7FF;
+}
+
+.two{
+  width:71px;
+  height: 71px;
+  background: url('/images/two.png') ;
+}
+.two1{
+  background-position: -0px -71px;
+}
+.two2{
+  background-position: -0px -142px;
+}
+.two3{
+  background-position: -0px -213px;
+}
+.two4{
+  background-position: -0px -284px;
+}
+.two5{
+  background-position: -0px -355px;
+}
+.two6{
+  background-position: -0px -426px;
+}
+.two7{
+  background-position: -0px -497px;
+}
+.three{
+  width:71px;
+  height: 71px;
+  background: url('/images/three.png') ;
+  margin-right: 20px;
+}
+.three1{
+  background-position: -0px -71px;
+}
+.three2{
+  background-position: -0px -142px;
+}
+.three3{
+  background-position: -0px -213px;
+}
+.three4{
+  background-position: -0px -284px;
+}
+input[type='radio']{
+  margin-right: 53px !important;
+  margin-left: 25px !important;
 }

@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: '兜率宫八卦炉' });
+  res.render('count', { title: '兜率宫' });
 });
 
 module.exports = router;

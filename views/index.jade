@@ -2,43 +2,65 @@ extends layout
 
 block content
   .container
-    .h1 炼药信息采集
+    ul.nav.nav-tabs
+      li.active(role='presentation')
+        a(href='/') 炼药
+      li(role='presentation')
+        a(href='/count') 统计
+    .h1 兜率宫八卦炉
     hr
-    .h2 请选择二药：
+    .h3 请选择二级药：
     .btn-group
-      button.btn.btn-default.two 血色茶花
-      button.btn.btn-default.two 仙狐延
-      button.btn.btn-default.two 鹿茸
-      button.btn.btn-default.two 麝香
+      button
+        div.two.two0
+      button
+        div.two.two1
+      button
+        div.two.two2
+      button
+        div.two.two3
     p
-    .btn-group
-      button.btn.btn-default.two 火凤之睛
-      button.btn.btn-default.two 孔雀红
-      button.btn.btn-default.two 血珊瑚
-      button.btn.btn-default.two 凤凰尾
+    .btn-group4
+      button
+        div.two.two4
+      button
+        div.two.two5
+      button
+        div.two.two6
+      button
+        div.two.two7
     hr
-    .h2 配方:
+    .h3 配方:
     p
     .btn-group
-      button.btn.btn-default.mat 五龙丹1
-      button.btn.btn-default.mat 五龙丹2
-    p
-    .btn-group
-      button.btn.btn-default.mat 五龙丹3
-      button.btn.btn-default.mat 五龙丹4
+      button
+        div.mat.two.two1
+      button
+        div.mat.two.two1
+      button
+        div.mat.two.two1
+      button
+        div.mat.two.two1
     hr
-    .h2 请选择三药及品质：
+    .h3 炼制结果：
     p
-    select.form-control#three
-      option 金疮药
-      option 定神香
-      option 五龙丹
-      option 金香玉
-      option 九转还魂丹
+    label.three.three0(for='three0')
+    label.three.three1(for='three1')
+    label.three.three2(for='three2')
+    label.three.three3(for='three3')
+    label.three.three4(for='three4')
+    br
+    input(type='radio',name='three',class='threeIn',id='three0',value='金创药')
+    input(type='radio',name='three',class='threeIn',id='three1',value='金香玉')
+    input(type='radio',name='three',class='threeIn',id='three2',value='定神香')
+    input(type='radio',name='three',class='threeIn',id='three3',value='五龙丹')
+    input(type='radio',name='three',class='threeIn',id='three4',value='九转还魂丹')
     p
     .form-group
-      input.form-control#quality(type='text',placeholder='输入品质')
+      input.form-control#quality(type='text',placeholder='请输入品质')
     hr
     button.btn.btn-default#sub 提交
+    span#loading
+      img(src='/images/loading.gif')
 
 

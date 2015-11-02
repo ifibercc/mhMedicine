@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  script(src='/echarts/build/dist/echarts-all.js')
+  .container
+    ul.nav.nav-tabs
+      li(role='presentation')
+        a(href='/') 炼药
+      li.active(role='presentation')
+        a(href='/count') 统计
+    .h1 统计
+    #main(style='height:400px')
+    script.
+      var myChart = echarts.init(document.getElementById('main')); 
+        var option = {
+            tooltip: {
+                show: true
+            },
+            legend: {
+                data:['销量']
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    data : ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    "name":"销量",
+                    "type":"bar",
+                    "data":[5, 20, 40, 10, 10, 20]
+                }
+            ]
+        };
+
+        // 为echarts对象加载数据 
+        myChart.setOption(option); 
