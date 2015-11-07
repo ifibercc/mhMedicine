@@ -60,5 +60,8 @@ $(function(){
   $('#quality').keyup(function(){
     this.value = this.value.replace(/[^\d]/g, '').replace(/(\d{4})(?=\d)/g, "$1 ");
   });
+  $('.three0').click(function(){
+    $('#quality').val('1');
+  });
 
 });
