@@ -60,8 +60,16 @@ $(function(){
   $('#quality').keyup(function(){
     this.value = this.value.replace(/[^\d]/g, '').replace(/(\d{4})(?=\d)/g, "$1 ");
   });
+  //选择金创药的时候把品质变成1
   $('.three0').click(function(){
     $('#quality').val('1');
+  });
+  //回车自动提交事件
+  $(document).keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){  
+      $("#sub").click();
+    }
   });
 
 });
