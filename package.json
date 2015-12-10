@@ -13,5 +13,18 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "description": "梦幻西游炼药信息采集系统\r ![系统截图](https://github.com/ifibercc/mhMedicine/blob/master/public/images/screenshoot.png)",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifibercc/mhMedicine.git"
+  },
+  "author": "Lemoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifibercc/mhMedicine/issues"
+  },
+  "homepage": "https://github.com/ifibercc/mhMedicine#readme"
 }
